@@ -1,0 +1,71 @@
+# Example ESPHome configuration entry
+esphome:
+  name: admin
+ 
+esp32:
+  board: vintlabs-devkit-v1
+  framework:
+    type: arduino
+ 
+# Enable logging
+logger:
+  level: WARN
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "onnExkHdBxsXjOFAK6ACTmIxClZI2GTcILpT8vxW8sM="
+   
+ # password: "Iot123456789*"
+ 
+ota:
+  - platform: esphome
+    password: "Iot123456789*"
+ 
+wifi:
+  ssid: "IoT05"
+  password: "Iot123456789*"
+ 
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "admin"
+    password: "Iot123456789*"
+ 
+ 
+web_server:
+  port: 80
+ 
+captive_portal:
+
+# esp32_ble_tracker - Componente principal para rastreamento de Bluetooth Low Energy (BLE) [2].
+esp32_ble_tracker:
+  
+  # max_connections (Opcional): Número máximo de slots de conexão BLE a serem usados [5].
+
+  # Recomendado não exceder 5 slots para evitar problemas de memória [5].
+  max_connections: 1
+ 
+  on_ble_service_data_advertise:
+    - mac_address: 5A:90:1E:3C:34:F4
+      service_uuid: 'f8f664a0-da61-438e-81d6-121df307fde7'
+      then:
+        - lambda: 'id(ble_sensor).publish_state(x[0]);'
+ 
+ 
+# Configura um sensor binário para detectar a presença de dispositivo Bluetooth Low Energy (BLE)
+# Usando o UUID, major e minor do iBeacon para identificar o celular Carla 
+binary_sensor:
+  - platform: ble_presence
+    ibeacon_uuid: 'f8f664a0-da61-438e-81d6-121df307fde7'
+    name: "Celular Carla iBeacon"
+    ibeacon_major: 100
+    ibeacon_minor: 40004
+    timeout: 30s
+ 
+# Define um sensor template para representar o estado ou dados relacionados ao sensor BLE
+# Permite exposição personalizada e integração com outras automações no Home Assistant
+
+sensor:
+  - platform: template
+    name: "Celular Carla iBeacon"
+    id: ble_sensor
+ 
