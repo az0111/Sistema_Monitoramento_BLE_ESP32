@@ -68,4 +68,5 @@ Se o comando não for reconhecido, a **Microsoft Store** será aberta para que v
 
 Após a instalação do Python, você estará pronto para prosseguir com a instalação do ESPHome.
 
+<img width="820" height="527" alt="image" src="https://github.com/user-attachments/assets/163aeb08-5713-40dd-a7b1-50bdf2d01bb3" />
 
