@@ -68,9 +68,11 @@ Se o comando não for reconhecido, a **Microsoft Store** será aberta para que v
 
 Após a instalação do Python, você estará pronto para prosseguir com a instalação do ESPHome.
 
+<br>
 
 <img width="886" height="600" alt="image" src="https://github.com/user-attachments/assets/1609b79d-30c9-48ab-ae5d-bc1dc4448c98" />
 
+<br>
 
 Para confirmar se o Python foi instalado corretamente no seu sistema, siga as etapas abaixo:
 
@@ -117,6 +119,8 @@ No assistente de configuração (wizard), você deverá:
 
 Esses passos iniciais garantem que o ESPHome crie a configuração compatível e otimize o funcionamento do dispositivo no seu ambiente.
 
+<br>
+
 <img width="886" height="477" alt="image" src="https://github.com/user-attachments/assets/34576b18-d475-49a0-a676-1678704bbc2a" />
 
 <br>
@@ -144,6 +148,7 @@ Esta senha é essencial para garantir a segurança durante o processo de atualiz
 
 No assistente de configuração, insira uma senha forte e segura para proteção da atualização OTA.
 <br>
+
 <img width="886" height="298" alt="image" src="https://github.com/user-attachments/assets/6d959ed4-dba0-41eb-b2bb-d3f58d4fccda" />
 
 <br>
@@ -202,11 +207,13 @@ Seguindo essas orientações, o seu ambiente estará preparado para integrar o s
 <br>
 
 <img width="886" height="408" alt="image" src="https://github.com/user-attachments/assets/81db7327-c5ea-408c-b0cf-59807e9d8e8d" />
+
 <br>
 
 Após a instalação do [translate:VirtualBox], é necessário abrir o programa para iniciar o processo de criação da máquina virtual para o [translate:Home Assistant
 
 <br>
+
 <img width="886" height="550" alt="image" src="https://github.com/user-attachments/assets/c565684e-672c-43a5-a0f3-60b7a93537f1" />
 
 <br>
@@ -224,15 +231,21 @@ Em seguida, prossiga para definir a capacidade da máquina virtual, configurando
 
 
 <br>
+
 <img width="881" height="555" alt="image" src="https://github.com/user-attachments/assets/cb66ff31-3edb-45ff-9445-d67a98aac027" />
+
 <br>
+
 Após criar a máquina virtual no VirtualBox, é necessário selecionar o arquivo **.vdi** da máquina virtual que foi baixada e descompactada.
 1. Clique no ícone de pasta ao lado da opção **Disco Rígido** para abrir o navegador de arquivos.
 2. Navegue até o local onde o arquivo **.vdi** foi salvo.
 3. Selecione o arquivo **.vdi** correspondente à sua máquina virtual.
 4. Confirme para vincular o arquivo à máquina virtual.
+
 <br>
+
 <img width="886" height="547" alt="image" src="https://github.com/user-attachments/assets/9e2fd0e7-05b8-4ea7-942c-ab239ce67731" />
+
 <br>
 
 
