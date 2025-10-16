@@ -68,5 +68,46 @@ Se o comando não for reconhecido, a **Microsoft Store** será aberta para que v
 
 Após a instalação do Python, você estará pronto para prosseguir com a instalação do ESPHome.
 
-<img width="820" height="527" alt="image" src="https://github.com/user-attachments/assets/163aeb08-5713-40dd-a7b1-50bdf2d01bb3" />
+
+<img width="886" height="600" alt="image" src="https://github.com/user-attachments/assets/1609b79d-30c9-48ab-ae5d-bc1dc4448c98" />
+
+
+Para confirmar se o Python foi instalado corretamente no seu sistema, siga as etapas abaixo:
+
+Abra o terminal ou prompt de comando do seu sistema (no Windows, pode ser o PowerShell ou CMD).
+
+Digite o comando abaixo e pressione Enter para verificar a versão do Python instalada:
+
+* python --version
+
+<img width="886" height="339" alt="image" src="https://github.com/user-attachments/assets/3c956c50-8943-49ff-9b5f-200a4aefe3fd" />
+
+
+Se a instalação do Python foi concluída com sucesso, você pode prosseguir para a próxima etapa: instalar o ESPHome﻿.
+
+Para isso, abra o terminal e execute o comando abaixo:
+
+* pip install esphome
+
+Após a instalação, crie uma nova pasta para o seu projeto ESPHome.
+
+Em seguida, execute o comando wizard do ESPHome para iniciar a configuração do dispositivo.
+
+Importante: substitua no comando o caminho indicado pelo caminho correto onde o Python está instalado no seu sistema.
+
+Este comando wizard ajudará a criar o arquivo de configuração inicial e orientará as próximas etapas para configurar seu ESP32 utilizando o ESPHome.
+
+
+<img width="886" height="217" alt="image" src="https://github.com/user-attachments/assets/60f926b0-e301-4d05-bd70-706eef3923bf" />
+
+
+
+
+
+
+  
+
+
+
+
 
